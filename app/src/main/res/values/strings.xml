@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EPT Planner</string>
+    <string name="thu_25_2021">Thu, 25 2021</string>
+    <string name="hello">Welcome</string>
+    <string name="ti">Discipline</string>
+    <string name="productivity">70%</string>
+    <string name="tt">tt</string>
+    <string name="Category">Category</string>
+    
+    <string-array name="category">
+        <item>a</item>
+        <item>b</item>
+    </string-array>
+</resources>

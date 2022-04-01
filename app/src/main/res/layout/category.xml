@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lo">
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:text="date of today"
+        android:layout_width="228dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/ds"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="46dp"
+        android:gravity="center_vertical"
+        android:text="Category"
+        android:textColor="@color/back"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/productivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/ds"
+        android:text="12%"
+        android:textSize="34sp"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:background="@color/back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="26sp"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="desc"
+            android:textColor="@color/o"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's tasks"
+            android:textSize="26sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tasks0"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="110dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:nestedScrollingEnabled="true"/>
+
+
+
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:text="Later Tasks:"
+            android:textSize="26sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:nestedScrollingEnabled="true"/>
+
+
+
+
+
+
+
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

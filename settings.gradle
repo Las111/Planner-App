@@ -1,0 +1,2 @@
+rootProject.name = "EPT Planner"
+include ':app'
